@@ -12,3 +12,4 @@ junod init $2 --chain-id $1
 curl https://raw.githubusercontent.com/CosmosContracts/testnets/main/$1/genesis.json > ~/.juno/config/genesis.json
 
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" ~/.juno/config/config.toml
+

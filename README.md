@@ -35,3 +35,21 @@ make install
 junod version
 ```
 
+- Cosmovisor
+
+```bash
+go get github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor
+
+# Confirm after install
+which cosmovisor
+```
+
+```bash
+export DAEMON_NAME=junod
+export DAEMON_HOME=$HOME/.juno
+
+# Check
+echo $DAEMON_NAME
+source ~/.profile
+```
+
