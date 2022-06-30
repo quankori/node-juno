@@ -40,16 +40,15 @@ junod version
 ```bash
 go get github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor
 
+# OR
+
+go mod download
+
 # Confirm after install
 which cosmovisor
 ```
 
 ```bash
-export DAEMON_NAME=junod
-export DAEMON_HOME=$HOME/.juno
-
-# Check
-echo $DAEMON_NAME
-source ~/.profile
+# Setup cosmosvisor
+make -B cosmovisor
 ```
-
